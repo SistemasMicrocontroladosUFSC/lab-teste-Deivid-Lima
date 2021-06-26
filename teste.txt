@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   digitalWrite(ledAceso, LOW); 
   if (sentido == HIGH){
-     if(ledAceso == 6){   ledAceso = 10;  } 
+     if(ledAceso == 6){   ledAceso = 9;  } 
      else             {   ledAceso--;     }
   } 
   else{
