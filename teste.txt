@@ -1,3 +1,24 @@
-atividade 1
-aushui qnoasb ouqquwueçbçiu
-eu acho hquwehq aishdqiu
+byte ledAceso = 6; /* Inicia acendendo o led 6 */
+byte sentido = HIGH; /* valor de "sentido" define direção de rotação*/
+
+void setup() {
+  for(byte i=6; i <= 10; i++)
+  {
+     pinMode(i, OUTPUT);
+  } 
+  attachInterrupt( , , ); 
+ }
+
+void loop() {
+  digitalWrite(ledAceso, LOW); 
+  if (sentido == HIGH){
+     if(ledAceso == 6){   ledAceso = 10;  } 
+     else             {   ledAceso--;     }
+  } 
+  else{
+     if(ledAceso == 10){  ledAceso = 6;   }
+     else              {  ledAceso++;     }
+  }
+  digitalWrite(ledAceso,HIGH); 
+  delay(400); 
+}
